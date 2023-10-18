@@ -11,7 +11,7 @@ const Ambulance = () => {
   useEffect(() => {
     const handleRotation = () => {
       // Rotate the model 45 degrees around the Y-axis each time this function is called
-      setRotation([6, rotation[1] - Math.PI / 4, 0])
+      setRotation([0, - Math.PI / 0.255, 0.2])
     }
 
     handleRotation()
