@@ -1,6 +1,26 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root{
+    margin-top: 25vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .canvas{
+    width: 100vh;
+    height: 100vh; 
+} */
+
+@media screen and (min-width: 768px) {
+    .root{
+        width: 100%;
+        
+        margin-top: 50px;
+    }
 }

@@ -1,7 +1,7 @@
-import './App.css'
 import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Canvas from './canvas';
+import './App.css';
 
 function App() {
   const [balance, setBalance] = useState(0);
@@ -39,11 +39,11 @@ function App() {
 
   return (
     <>
-      <div style={{ height: '50vh', width: '100vh'}}>
-        <h1>布鹿 － 救護車計畫</h1>
-        <Canvas />
-        <h3>Balance: {balance} eth</h3>
-        <h3>Calculated Value: {calculatedValue} USD</h3>
+      <div className='root'>
+        <h1>Bru 救護車計畫</h1>
+        <Canvas className='canvas'/>
+        <h3>Balance: {Number(balance).toFixed(4)} ETH</h3>
+        <h3>Value: {(calculatedValue).toFixed(2)} USD</h3>
       </div>
     </>
   )

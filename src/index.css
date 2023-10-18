@@ -1,14 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: "Inter", sans-serif;
+  /* background-color: #FFBF00; */
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
   background-color: #FFBF00;
-  font-family: 'Noto Sans TC', sans-serif;
 }
+
+.app {
+  @apply relative w-full h-screen overflow-hidden;
+  @apply mx-0 my-auto;
+}
+
+.home {
+  @apply w-fit xl:h-full flex xl:justify-between justify-start items-start flex-col xl:py-8 xl:px-36 sm:p-8 p-6 max-xl:gap-7 absolute z-10;
+}
+
+.home-content {
+  @apply flex-1 xl:justify-center justify-start flex flex-col gap-10;
+}
+
+
 
