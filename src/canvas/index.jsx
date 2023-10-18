@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber';
 import { Environment, Center, OrbitControls } from '@react-three/drei'
-
+import React from 'react'
 // import Backdrop from './Backdrop';
 // import CameraRig from './CameraRig';
 import Ambulance from './Ambulance'

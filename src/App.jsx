@@ -1,5 +1,5 @@
 import './App.css'
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Canvas from './canvas';
 
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <div style={{ height: '100%', width: '100%'}}>
+      <div style={{ height: '50vh', width: '100vh'}}>
         <h1>布鹿 － 救護車計畫</h1>
         <Canvas />
         <h3>Balance: {balance} eth</h3>

@@ -1,5 +1,6 @@
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import React from 'react'
 
 const Ambulance = () => {
   const model = useLoader(GLTFLoader, './ambulance.glb')
@@ -8,7 +9,7 @@ const Ambulance = () => {
   return (
     <group>
         <mesh>
-            <primitive object={ model.scene } scale={ 5 } />
+            <primitive object={ model.scene } scale={ 3 } />
         </mesh>
     </group>
   )
